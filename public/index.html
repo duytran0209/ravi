@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <meta
+      name="csrf-token"
+      content="PJY2SR6H6obqhpDq2QDU97wVCaJAihCnMSh0lANp"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ravi.com.vn/uploads/0000/1/2022/05/08/favicon.ico"
+    />
+
+    <title>Ravi</title>
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://ravi.com.vn/libs/bootstrap/css/bootstrap.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ravi.com.vn/libs/font-awesome/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ravi.com.vn/libs/ionicons/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ravi.com.vn/libs/icofont/icofont.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://ravi.com.vn/libs/select2/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://ravi.com.vn/css/app.css" rel="stylesheet" />
+    <link
+      href="https://ravi.com.vn/css/font-icons/themify-icons/themify-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      href="https://ravi.com.vn/module/core/css/home.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script src="https://ravi.com.vn/libs/lazy-load/intersection-observer.js"></script>
+    <script
+      async
+      src="https://ravi.com.vn/libs/lazy-load/lazyload.min.js"
+    ></script>
+    <script>
+      // Set the options to make LazyLoad self-initialize
+      window.lazyLoadOptions = {
+        elements_selector: ".lazy",
+        // ... more custom settings?
+      };
+
+      // Listen to the initialization event and get the instance of LazyLoad
+      window.addEventListener(
+        "LazyLoad::Initialized",
+        function (event) {
+          window.lazyLoadInstance = event.detail.instance;
+        },
+        false
+      );
+    </script>
+
+    <script src="https://ravi.com.vn/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ravi.com.vn/libs/bootbox/bootbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
